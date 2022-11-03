@@ -1,0 +1,20 @@
+﻿@model HomeVM
+
+<h1>Home Index</h1>
+<h2>Students</h2>
+<p>@Model.Student.Name</p>
+<p>@Model.Student.SurName</p>
+<p>@Model.Student.Age</p>
+
+<h2>Blogs</h2>
+<p>@Model.Blog.Name</p>
+<p>@Model.Blog.Title</p>
+<p>@Model.Blog.Content</p>
+
+<h2>Groups</h2>
+@foreach (Group group in Model.Groups)
+{
+    <p>
+        <a asp-controller="home" asp-action="detail" asp-route-id="@group.Id">@group.Name</a>
+    </p>
+}

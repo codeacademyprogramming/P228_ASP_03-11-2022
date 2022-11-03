@@ -1,0 +1,20 @@
+﻿@model List<Model>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+@if (Model != null && Model.Count > 0)
+{
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>
+                <a asp-controller="car" asp-action="index" asp-route-id="@item.Id">@item.Name</a>
+            </li>
+        }
+    </ul> }
+else
+{
+    <h1>Markanin Modelleri Movcud Deyil</h1>
+}

@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20221103111647_CreatedSettingsTable.cs" />
+    <Compile Remove="Migrations\20221103111647_CreatedSettingsTable.Designer.cs" />
+    <Compile Remove="Migrations\20221103112021_CreatedSettingsTable.cs" />
+    <Compile Remove="Migrations\20221103112021_CreatedSettingsTable.Designer.cs" />
+    <Compile Remove="Migrations\20221103112759_UpdatedSettingsTableAddedDateColumn.cs" />
+    <Compile Remove="Migrations\20221103112759_UpdatedSettingsTableAddedDateColumn.Designer.cs" />
+    <Compile Remove="Migrations\20221103112943_UpdatedSettingsTableUpdatedColumnNameKeyToKy.cs" />
+    <Compile Remove="Migrations\20221103112943_UpdatedSettingsTableUpdatedColumnNameKeyToKy.Designer.cs" />
+    <Compile Remove="Migrations\20221103114319_Check.cs" />
+    <Compile Remove="Migrations\20221103114319_Check.Designer.cs" />
+    <Compile Remove="Migrations\20221103115354_UpdatedCourseTableRelatedCourseCategoriesTable.cs" />
+    <Compile Remove="Migrations\20221103115354_UpdatedCourseTableRelatedCourseCategoriesTable.Designer.cs" />
+    <Compile Remove="Migrations\20221103115811_UpdatedCourseTableRelatedCourseCategoriesTable.cs" />
+    <Compile Remove="Migrations\20221103115811_UpdatedCourseTableRelatedCourseCategoriesTable.Designer.cs" />
+    <Compile Remove="Migrations\20221103122152_Check.cs" />
+    <Compile Remove="Migrations\20221103122152_Check.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.30" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.30" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.30">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+</Project>
